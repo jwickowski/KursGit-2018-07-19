@@ -11,13 +11,12 @@ var Roman = {};
                 var nextChar = arabicNumber[i+1];
             }
             if(current === "I"){
-                if(nextChar == "V"){
+                if(nextChar == "V" || nextChar == "X"){
                     result --;
                 }
                 else{
-                result ++;
-            }
-            
+                    result ++;
+                }
             }
             if(current === "V"){
                 result += 5;
