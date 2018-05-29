@@ -6,14 +6,13 @@ var Roman = {};
         for(var i = 0; i< arabicNumber.length; i++){
             var current = arabicNumber[i];
             var isNext = i+1 < arabicNumber.length;
+            var nextChar = null;
+            if(isNext){
+                var nextChar = arabicNumber[i+1];
+            }
             if(current === "I"){
-                if(isNext){
-                    if(arabicNumber[i+1] == "V"){
-                        result --;
-                    }
-                    else{
-                        result ++
-                    }
+                if(nextChar == "V"){
+                    result --;
                 }
                 else{
                 result ++;
