@@ -2,7 +2,7 @@ var Roman = {};
 
 (function(){
     function toArabic(arabicNumber){
-        return 1;
+        return arabicNumber.length;
     };
 
     Roman.toArabic = toArabic;
