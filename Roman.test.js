@@ -9,6 +9,7 @@ var romanTests = [
     prepareTestCase("Vto5", "V", 5),
     prepareTestCase("VIto6", "VI", 6),
     prepareTestCase("IVto4", "IV", 4),
+    prepareTestCase("VIIIto8", "VIII", 8),
 ];
 
 for(var i = 0; i < romanTests.length; i++){
