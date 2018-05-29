@@ -1,12 +1,11 @@
+function prepareTestCase(testName, roman, expctedArabic){
+    eval("var func = function "+testName+"(romanInstance) { var result = romanInstance.toArabic('"+roman+"'); return result === "+expctedArabic+"; } ")
+    return func;
+}
+
 var romanTests = [
-function Ito1(romanInstance){
-    var result = romanInstance.toArabic("I");
-    return result === 1;
-},
-function IIto2(romanInstance){
-    var result = romanInstance.toArabic("II");
-    return result === 2;
-},
+    prepareTestCase("Ito1", "I", 1),
+    prepareTestCase("IIto2", "II", 2)
 ];
 
 for(var i = 0; i < romanTests.length; i++){
