@@ -7,7 +7,6 @@ function Ito1(romanInstance){
 
 for(var i = 0; i < romanTests.length; i++){
     var romanTest = romanTests[i];
-    console.log("running test '" + romanTest.name +"'");
     var romanInstance = Object.create(Roman);
     var testResult  = romanTest(romanInstance);
     if(testResult){
