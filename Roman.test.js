@@ -12,6 +12,7 @@ var romanTests = [
     prepareTestCase("VIIIto8", "VIII", 8),
     prepareTestCase("Xto10", "X", 10),
     prepareTestCase("XXXto30", "XXX",30),
+    prepareTestCase("IXto9", "IX",9),
 ];
 
 for(var i = 0; i < romanTests.length; i++){
