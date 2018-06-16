@@ -24,6 +24,9 @@ var Roman = {};
             if(current === "X"){
                 result += 10;
             }
+            if(current === "C"){
+                result += 100;
+            }
         }
         return result;
     };
