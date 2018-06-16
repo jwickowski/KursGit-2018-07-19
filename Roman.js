@@ -22,7 +22,12 @@ var Roman = {};
                 result += 5;
             }
             if(current === "X"){
-                result += 10;
+                if(nextChar === "C"){
+                    result -= 10;
+                }
+                else{
+                    result += 10;
+                }
             }
             if(current === "C"){
                 result += 100;
