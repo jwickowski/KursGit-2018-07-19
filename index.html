@@ -11,4 +11,13 @@
     <div><label for="roman-text">Roman Text: </label><input id="roman-text"/></div>
     <div><span>Result:</span><span id="roman-result"></span></div>
   </body>
+  <script>
+
+    var romanText = document.getElementById("roman-text").onkeyup = function (e){
+      var roman = Object.create(Roman);
+      var arabic = roman.toArabic(e.target.value);
+      var romanResult = document.getElementById("roman-result");
+      romanResult.textContent = arabic;
+    };
+  </script>
 </html>
